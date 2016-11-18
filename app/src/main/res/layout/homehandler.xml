@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/start"
+    android:id="@+id/activityhomehandler"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -9,13 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/bb_background"
-    tools:context="com.example.mohamed.shhd.StartActivity">
+    tools:context="com.example.mohamed.shhd.homehandlerActivity">
+
 
     <Button
-        android:id="@+id/Home_Handler"
+        android:id="@+id/Light_control"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:text="Home handler"
+        android:text="Light control"
         android:textSize="22dp"
         android:background="@drawable/button_m"
         android:textColor="#c4ddc5"
@@ -24,42 +25,41 @@
         android:layout_marginTop="38dp" />
 
     <Button
+        android:id="@+id/Wake_up_alarm"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:text="Aiding disabled people"
-        android:textSize="20dp"
+        android:text="Wake up alarm"
+        android:textSize="22dp"
         android:background="@drawable/button_m"
         android:textColor="#c4ddc5"
-        android:id="@+id/Diasbled_people"
         android:layout_marginBottom="35dp"
         android:layout_marginTop="140dp"
-        android:layout_alignStart="@+id/Home_Handler" />
+        android:layout_alignStart="@+id/Light_control" />
 
     <Button
+        android:id="@+id/Take_photos"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:text="security"
+        android:text="Take photos"
         android:textSize="24dp"
         android:background="@drawable/button_m"
         android:textColor="#c4ddc5"
-        android:id="@+id/Security"
         android:layout_marginTop="240dp"
-        android:layout_alignStart="@+id/Diasbled_people"
+        android:layout_alignStart="@+id/Wake_up_alarm"
         android:layout_marginBottom="42dp"
         />
 
 
     <Button
+        android:id="@+id/Battery_level"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:text="Mission history"
+        android:text="Battery level"
         android:textSize="24dp"
         android:background="@drawable/button_m"
         android:textColor="#c4ddc5"
-        android:id="@+id/Mission_history"
         android:layout_marginTop="340dp"
-        android:layout_alignStart="@+id/Security"
+        android:layout_alignStart="@+id/Take_photos"
         android:layout_marginBottom="48dp" />
-
 
 </RelativeLayout>
